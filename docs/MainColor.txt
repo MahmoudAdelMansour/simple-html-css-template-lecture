@@ -1,0 +1,6 @@
+Primary Heading Color : #ffffff
+Secondary Heading : #484848
+Primary Text Color : #aaaaaa
+Secondary Text Color : #666
+Primary Button Color : #f32853 | Hover : #f44669
+Secondary Button Color : #323037

@@ -1,0 +1,583 @@
+/* Start Coding  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*    rgba(35,35,35,0.7) */
+    background: #5d5c61;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    background: url('../images/banner.jpg') no-repeat top /cover fixed;
+    height: 90vh;
+    z-index: 1;
+}
+
+nav {
+    background: transparent;
+    padding: 3em 4em;
+    position: relative;
+}
+
+.logoSide {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.logoSide h1 {
+    color: #ffff;
+    font-size: 1.2em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    position: relative;
+}
+
+.logoSide h1:before {
+    content: "";
+    position: absolute;
+    background: #cccc;
+    width: 3px;
+    height: 50px;
+    left: -8px;
+    top: -11px;
+}
+
+.logoSide h1 span {
+    font-weight: lighter;
+    word-spacing: -1px;
+}
+
+.navMenu {
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    top: 35%;
+}
+
+.navMenu ul {}
+
+.navMenu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 1em;
+}
+
+.navMenu ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: arial;
+    color: #cccc;
+    transition: color 0.5s linear;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.navMenu ul li a:hover {
+    color: #fff;
+}
+
+
+/* Banner Titles Section  */
+
+.bannerTitles {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.bannerTitles h1 {
+    color: #fff;
+    font-size: 4em;
+    font-family: arial;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0px 0px 15px 0px;
+}
+
+.bannerTitles h2 {
+    color: #cccc;
+    font-size: 2em;
+    font-family: arial;
+    font-weight: lighter;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    width: 44%;
+    line-height: 1.8;
+    margin: 0px auto;
+    padding: 0px 0px 15px 0px;
+}
+
+.bannerTitles a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: arial;
+    background: #f32853;
+    font-size: 1.5em;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.bannerTitles a:hover {
+    background: #f44669;
+}
+
+main {
+    margin: 5% 15% 0% 15%;
+}
+
+.firstSection {
+    height: 30vw;
+    padding: 0px 6%;
+}
+
+.firstSection .leftSide {
+    float: left;
+    width: 45%;
+}
+
+.firstSection .leftSide h1 {
+    color: #484848;
+    font-size: 4em;
+    font-family: arial;
+    line-height: 1.3;
+    width: 85%;
+    padding: 0px 0px 16px 0px;
+}
+
+.firstSection .leftSide h2 {
+    color: #aaaaaa;
+    font-size: 1.5em;
+    font-family: arial;
+    word-break: break-word;
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    padding: 16px 0px 0px 0px;
+}
+
+.firstSection .rightSide {
+    float: right;
+    width: 40%;
+}
+
+.rightSide p {
+    color: #666;
+    font-family: arial;
+    margin: 15px 0px;
+    font-weight: lighter;
+    font-size: 1.2em;
+    line-height: 1.4;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.rightSide p:first-child {
+    padding: 0px 0px;
+}
+
+
+/* Second Section  */
+
+.secondSection {
+    background: #f6f6f6;
+    position: relative;
+    text-align: center;
+}
+
+.secondSection:before {
+    content: "";
+    background: #f6f6f6;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    padding-right: 3000px;
+}
+
+.secondSection .headOfSecondSection {
+    margin: 5em 0;
+}
+
+.secondSection .headOfSecondSection h1 {
+    color: #484848;
+    font-size: 3.2em;
+    font-family: arial;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2em 0 0.5em 0;
+}
+
+.secondSection .headOfSecondSection h2 {
+    color: #aaa;
+    font-size: 1.7em;
+    font-family: arial;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.bodyOfSecondSection .firstImageCard,
+.bodyOfSecondSection .secondImageCard {
+    background: #fff;
+    width: 47%;
+    padding: 0 0 1em 0;
+    margin: 1em 1em;
+    box-shadow: 0px 0px 4px 0.4px #ccc;
+    float: left;
+}
+
+.bodyOfSecondSection .firstImageCard img,
+.bodyOfSecondSection .secondImageCard img {
+    width: 100%;
+}
+
+.bodyOfSecondSection .firstImageCard p,
+.bodyOfSecondSection .secondImageCard p {
+    color: #484848;
+    font-size: 1.5em;
+    font-family: arial;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 0 1em 0;
+}
+
+.footerOfSecondSection a,
+.footerOfSecondSection a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: arial;
+    background: #f32853;
+    font-size: 1.5em;
+    padding: 25px 2em;
+    border-radius: 5px;
+    margin: 2em 0.3em;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.footerOfSecondSection {
+    padding: 5em 0;
+}
+
+.footerOfSecondSection a:last-child {
+    background: #484848;
+}
+
+.footerOfSecondSection a:hover {
+    background: #f44669;
+}
+
+.footerOfSecondSection a:last-child:hover {
+    background: #545454;
+}
+
+
+/* Third Section */
+
+.thirdSection {}
+
+.thirdSection h1 {
+    color: #484848;
+    font-size: 3.2em;
+    font-family: arial;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2em 0 0.5em 0;
+}
+
+.thirdSection h2 {
+    color: #aaa;
+    font-size: 1.7em;
+    font-family: arial;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.bodyOfThirdSection {
+    margin: 7em 0;
+}
+
+.thirdSection .bodyOfThirdSection  {
+    text-align: center;
+}
+
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard h1,
+.thirdSection .bodyOfThirdSection .horizontallySecondCard h1,
+.thirdSection .bodyOfThirdSection .horizontallyThirdCard h1,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard h1 {
+    color: #484848;
+    font-size: 1.3em;
+    font-family: arial;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2em 0 0.5em 0;
+    
+}
+
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard h2,
+.thirdSection .bodyOfThirdSection .horizontallySecondCard h2,
+.thirdSection .bodyOfThirdSection .horizontallyThirdCard h2,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard h2 {
+    color: #aaa;
+    font-size: 1.1em;
+    font-family: arial;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard p,
+.thirdSection .bodyOfThirdSection .horizontallySecondCard p,
+.thirdSection .bodyOfThirdSection .horizontallyThirdCard p,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard p {
+    color: #666;
+    font-family: arial;
+    margin: 15px 0px;
+    font-weight: lighter;
+    font-size: 1em;
+    line-height: 1.4;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    margin: 3.5em 0.5em;
+}
+
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard img,
+.thirdSection .bodyOfThirdSection .horizontallySecondCard img {
+    border: 0.5em solid rgba(144, 144, 144, 0.25);
+    border-radius: 50%;
+}
+
+.thirdSection .bodyOfThirdSection .horizontallyThirdCard img,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard img {
+    border: 0.5em solid rgba(144, 144, 144, 0.25);
+    border-radius: 50%;
+}
+
+/*  Test */
+
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard,
+.thirdSection .bodyOfThirdSection  .horizontallyThirdCard {
+    display: inline-block;
+    width:45%;
+ position: relative;   
+}
+
+
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard h1,
+.thirdSection .bodyOfThirdSection .horizontallyThirdCard h1{
+text-align: right;
+     width: 57%;
+
+}
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard h2,
+.thirdSection .bodyOfThirdSection .horizontallyThirdCard h2{
+text-align: justify;
+margin:0 0 -3em 0 ;
+    text-align: right;
+    width: 57%;
+}
+.thirdSection .bodyOfThirdSection .horizontallyFirstCard p,
+.thirdSection .bodyOfThirdSection .horizontallyThirdCard p{
+    width: 50%;
+    margin:0 5% 0 0;
+    display: inline-block;
+    text-align: justify;
+    direction:rtl;
+}
+.thirdSection .bodyOfThirdSection .horizontallySecondCard ,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard{
+    display: inline-block;
+    width: 45%;
+        position: relative;
+}
+.thirdSection .bodyOfThirdSection .horizontallySecondCard img,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard img{
+    float:left;
+    margin:4.6em 3em 0 0;
+    
+}
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard img{
+
+    margin:4.8em 2em 0 0;
+    
+}
+.thirdSection .bodyOfThirdSection .horizontallySecondCard p ,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard p{
+   width: 55%;
+    display: inline-block;
+    text-align: left;
+}
+.thirdSection .bodyOfThirdSection .horizontallySecondCard h1 ,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard h1{
+ text-align: left;
+  
+}
+
+.thirdSection .bodyOfThirdSection .horizontallySecondCard h2 ,
+.thirdSection .bodyOfThirdSection .horizontallyFourthCard h2{
+
+margin:0 0px -2em 0;
+    text-align: left;
+  
+    
+}
+/* Fourth Area  */
+
+.fourthSection .bodyOfFourthSection  {
+    position: relative;
+    background: url('../images/banner.jpg') no-repeat center/cover fixed;
+    height: 40vh;
+    z-index: 1;
+    position:absolute;
+    left:0;
+    width:100%;
+  text-align: center;
+}
+
+.fourthSection .bodyOfFourthSection:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*    rgba(35,35,35,0.7) */
+    background: #5d5c61;
+    width: 100%;
+   
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.fourthSection .bodyOfFourthSection h1{
+    margin:1.8em 0 0 0;
+      color: #fff;
+    font-size: 3em;
+    font-family: arial;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0px 0px 15px 0px;
+}
+.fourthSection .bodyOfFourthSection h2 {
+   color: #cccc;
+    font-size: 1.7em;
+    font-family: arial;
+    font-weight: lighter;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    width: 44%;
+    line-height: 1.8;
+    margin: 0px auto;
+    padding: 0px 0px 15px 0px;
+}
+.fourthSection .bodyOfFourthSection a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: arial;
+    background: #f32853;
+    font-size: 1.5em;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s;
+
+
+
+}
+.fourthSection .bodyOfFourthSection a:hover {
+    background: #f44669;
+}
+/*   Start Footer Area*/
+
+footer {
+     margin:30em 0 0 0;
+    padding:10em 0 0 0;
+    text-align: center;
+    background: #f6f6f6;
+}
+footer .headOfFooter a {
+    font-size:4em;
+    text-decoration: none;
+    margin:0 8px;
+   color:#aaa;
+    transition: color 0.3s;
+    display: inline-block;
+    padding:0.5em 0;
+}
+footer .headOfFooter a:hover {
+    color:#828282;
+}
+
+footer .bodyOfFooter ul li{
+    display: inline-block;
+    list-style:none;
+    padding:0.5em 0em 0 2em;
+    margin:1em 1em 8em 2em;
+    position:relative;
+    border-left:1px solid  rgba(144, 144, 144, 0.25);
+}
+footer .bodyOfFooter ul li:first-child {
+     border:none ;
+}
+/* footer
+.bodyOfFooter ul li:before {
+    content : "";
+    position: absolute;
+    left: -10px;
+    top:0;
+    width: 1.3px;
+    height: 100%;
+    background:rgba(144, 144, 144, 0.25) ;
+} */
+footer .bodyOfFooter ul li a {
+    font-size:1.2em;
+    text-decoration: none;
+    font-family:arial;
+    color:#aaa;
+     transition: color 0.3s;
+    font-weight: lighter;
+    
+}
+footer ul li a:hover {
+    color:#828282;
+}
